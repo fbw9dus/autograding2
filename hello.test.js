@@ -11,7 +11,30 @@ beforeAll(async (done) => {
 });
 
 describe('App Request', () => {
-  test('should responds with 404', async (done) => {
+  test('should have db entry', async (done) => {
+    const response = await request(app)
+    .get('/records')
+    expect(response.statusCode).toEqual(200)
+    expect(response.body[0].artist).toBe("George Michael")
+    done();
+  })
+  test('should have db entry', async (done) => {
+    const response = await request(app)
+    .get('/records')
+    expect(response.statusCode).toEqual(200)
+    expect(response.body[0].artist).toBe("George Michael")
+    done();
+  })
+})
+describe('App Request', () => {
+  test('should have db entry', async (done) => {
+    const response = await request(app)
+    .get('/records')
+    expect(response.statusCode).toEqual(200)
+    expect(response.body[0].artist).toBe("Michael")
+    done();
+  })
+  test('should have db entry', async (done) => {
     const response = await request(app)
     .get('/records')
     expect(response.statusCode).toEqual(200)

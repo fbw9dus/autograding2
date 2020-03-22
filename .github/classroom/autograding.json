@@ -3,7 +3,7 @@
     {
       "name": "first test",
       "setup": "npm install",
-      "run": "npm start && npm test",
+      "run": "npm test",
       "input": "",
       "output": "",
       "comparison": "included",

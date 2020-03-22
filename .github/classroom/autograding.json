@@ -3,7 +3,7 @@
     {
       "name": "records get",
       "setup": "npm install",
-      "run": "npm run jest ../get.test.js",
+      "run": "npm test -- ../get.test.js",
       "timeout": 10,
       "points": 2
     },{

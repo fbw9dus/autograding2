@@ -6,7 +6,8 @@
     "@babel/core": "*",
     "@babel/preset-env": "*",
     "babel-jest": "*",
-    "jest": "*"
+    "jest": "*",
+    "jest-dev-server": "^4.4.0"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -19,6 +20,6 @@
   },
   "scripts": {
     "start": "node ./bin/www",
-    "test": "jest"
+    "test": "jest --config=./jest.config.js"
   }
 }

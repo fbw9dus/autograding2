@@ -3,13 +3,13 @@
     {
       "name": "records get",
       "setup": "npm install",
-      "run": "npm test -- ../get.test.js",
+      "run": "npm test -- get.test.js",
       "timeout": 10,
       "points": 2
     },{
       "name": "records set",
       "setup": "npm install",
-      "run": "npm test -- ../set.test.js",
+      "run": "npm test -- set.test.js",
       "timeout": 10,
       "points": 2
     }

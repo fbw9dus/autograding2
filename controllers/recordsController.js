@@ -1,6 +1,10 @@
-exports.getRecords = (req, res, next) => {
+const Record = require('../models/Record')
+
+exports.getRecords = async (req, res, next) => {
   // Schreib hier code um alle records aus der records-Collection zu holen
-  const records = [1,2]
+  const record = new Record({artist: 'George Michael', price: 2, img: '/img', year: 1992, title: 'Christmas'});
+  await record.save()
+  const records = await Record.find();
   res.status(200).send(records);
 };
 

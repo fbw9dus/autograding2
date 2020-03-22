@@ -1,4 +1,6 @@
 module.exports = {
-    "globalSetup": './globalSetup.js',
-    "globalTeardown": "./globalTeardown.js"
+    testEnvironment: 'node',
+    coveragePathIgnorePatterns: [
+        "/node_modules/"
+    ]
 }

@@ -19,7 +19,6 @@
   },
   "scripts": {
     "start": "node ./bin/www",
-    "pretest": "npm start",
     "test": "jest"
   }
 }
